@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+<title>onload pushstate test</title>
+<script>
+function load() {
+console.log("calling on load");
+var stateObj = { foo: "dummy" };
+history.pushState(stateObj, "new page", "pushed.html");
+}
+window.onload = load;
+</script>
+</head>
+<body>
+<p>window.onload calling pushstate to pushed.html</p>
+</body>
+</html>
+
