@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+<title>onload pushstate test</title>
+<script>
+function PushStateCalled() {
+console.log("calling pushState");
+var stateObj = { foo: "dummy" };
+history.pushState(stateObj, "new page", "pushed.html");
+}
+</script>
+</head>
+<body>
+	<p> click this button to push state <button type="button" onclick="PushStateCalled()">pushstate pushed.html</button></p>
+</body>
+</html>
+
