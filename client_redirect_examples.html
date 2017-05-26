@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<title>onload pushstate test</title>
+<script>
+function PushStateCalled() {
+console.log("calling pushState");
+var stateObj = { foo: "dummy" };
+history.pushState(stateObj, "new page", "pushed.html");
+}
+function HashChange() {
+	
+}
+HashChange.counter = 0;
+HashChange.originalHref = window.location.href;
+HashChange.usingLocationHash = function () {
+  window.location.hash = "changed" + HashChange.counter;
+   HashChange.counter ++;
+} 
+HashChange.usingLocationHref = function () {
+	window.location.href = HashChange.originalHref + '#changed' + HashChange.counter;
+	HashChange.counter ++;
+}
+</script>
+</head>
+<body>
+	<p> click this button to push state <button type="button" onclick="PushStateCalled()">pushstate pushed.html</button></p>
+	<p> click this button to change hash using location.hash <button type="button" onclick="HashChange.usingLocationHash()">change hash</button></p>
+	<p> click this button to change hash using location= <button type="button" onclick="HashChange.usingLocationHref()">change hash</button></p>
+</body>
+</html>
+
