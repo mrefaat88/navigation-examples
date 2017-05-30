@@ -4,17 +4,19 @@ function pushStateCall() {
   history.pushState(stateObj, "new page", "empty_landing_page.html");
 }
 
-var hashChange = {counter: 0, originalHref: window.location.href};
-
-hashChange.usingLocationHash = function () {
-  console.log("Changing the location.hash");
-  window.location.hash = "changed" + this.counter ++;
-};
-
-hashChange.usingLocationHref = function () {
-  console.log("Changing the location.href to override hash");
-  window.location.href = this.originalHref +
-    '#changed' + this.counter ++;
+var hashChange = {
+  counter: 0,
+  originalHref: window.location.href,
+  changeLocationHash: function () {
+	console.log("counter " + hashChange.counter);
+    console.log("Changing the location.hash");
+    window.location.hash = "changed" + hashChange.counter ++;
+  },
+  changeLocationHref: function () {
+    console.log("Changing the location.href to override hash");
+    window.location.href = hashChange.originalHref +
+      '#changed' + hashChange.counter ++;
+  }
 };
 
 function replaceStateCall() {
