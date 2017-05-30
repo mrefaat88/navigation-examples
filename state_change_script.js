@@ -1,4 +1,4 @@
-function PushStateCall() {
+function pushStateCall() {
 console.log("calling pushState");
 var stateObj = { foo: "dummy" };
 history.pushState(stateObj, "new page", "empty_landing_page.html");
