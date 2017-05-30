@@ -10,7 +10,7 @@ hashChange.originalHref = window.location.href;
 
 hashChange.usingLocationHash = function () {
   console.log("Changing the location.hash");
-  window.location.hash = "changed" + HashChange.counter ++;
+  window.location.hash = "changed" + this.counter ++;
 };
 
 hashChange.usingLocationHref = function () {
