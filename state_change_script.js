@@ -4,9 +4,7 @@ function pushStateCall() {
   history.pushState(stateObj, "new page", "empty_landing_page.html");
 }
 
-var hashChange = {};
-hashChange.counter = 0;
-hashChange.originalHref = window.location.href;
+var hashChange = {counter: 0, originalHref: window.location.href};
 
 hashChange.usingLocationHash = function () {
   console.log("Changing the location.hash");
