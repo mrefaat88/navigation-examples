@@ -8,7 +8,6 @@ var hashChange = {
   counter: 0,
   originalHref: window.location.href,
   changeLocationHash: function () {
-	console.log("counter " + hashChange.counter);
     console.log("Changing the location.hash");
     window.location.hash = "changed" + hashChange.counter ++;
   },
