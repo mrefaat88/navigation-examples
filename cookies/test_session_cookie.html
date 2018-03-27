@@ -3,10 +3,10 @@
 <script>
 	function setCookie() {	 
 		var value =  document.getElementById("cookie_value").value;
-	    document.cookie = "sessioncookie=" + value  + "; expires=0; path=/";
+	    document.cookie = "sessioncookie=" + value ;
 	}
 	function getCookie() {
-	    var nameEQ = "sessioncookie =";
+	    var nameEQ = "sessioncookie=";
 	    var ca = document.cookie.split(';');
 	    for(var i=0;i < ca.length;i++) {
 	        var c = ca[i];
