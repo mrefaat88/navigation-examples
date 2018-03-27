@@ -3,7 +3,7 @@
 <script>
 	function setCookie() {	 
 		var value =  document.getElementById("cookie_value").value;
-	    document.cookie = "sessioncookie=" + value ;
+	    document.cookie = "sessioncookie=" + value + ";expires=0;path=/";
 	}
 	function getCookie() {
 	    var nameEQ = "sessioncookie=";
