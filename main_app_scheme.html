@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <title>Calling the app scheme</title>
+</head>
+<body>
+	<h3>Main frame</h3>
+     <a href='googlechrome://alert.html'>googlechrome</a> <br/>
+     <a href='googlechromes://alert.html'>googlechromes</a> <br/>
+     <a href='chromiums://alert.html'>chromiums</a> <br/>
+     <a href='chromium://alert.html'>chromium</a> <br/>
+
+	<h3>Iframe</h3>
+  <iframe src="data:text/html,<a href='googlechrome://alert.html'>googlechrome</a>" sandbox></iframe><br/>
+  
+  <iframe src="data:text/html,<a href='googlechromes://alert.html'>googlechromes</a>" sandbox></iframe><br/>
+ 
+  <iframe src="data:text/html,<a href='chromiums://alert.html'>chromiums</a>" sandbox></iframe><br/>
+ 
+  <iframe src="data:text/html,<a href='chromium://alert.html'>chromium</a>" sandbox></iframe>  <br/>
+</body>
+</html>
+
