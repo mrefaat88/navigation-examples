@@ -5,6 +5,7 @@
 </head>
 <body>
 	<h3>Main frame</h3>
+	
      <a href='googlechrome://alert.html'>googlechrome</a> <br/>
      <a href='googlechromes://alert.html'>googlechromes</a> <br/>
      <a href='googlechromess://alert.html'>googlechromess</a> <br/>
@@ -19,7 +20,9 @@
   
   <iframe src="data:text/html,<a href='googlechromes://alert.html'>googlechromes</a>" sandbox></iframe><br/>
  
-  <iframe src="data:text/html,<a href='chromiums://alert.html'>chromiums</a>" sandbox></iframe><br/>
+  <iframe src="data:text/html,<a href='chromiums://alert.html' target='_top'>chromiums target top</a>" sandbox></iframe><br/>
+ <iframe src="data:text/html,<a href='chromiums://alert.html' target='_blank'>chromiums target blank</a>" sandbox></iframe><br/>
+ <iframe src="data:text/html,<a href='chromiums://alert.html'>chromiums</a>" sandbox></iframe><br/>
  
   <iframe src="data:text/html,<a href='chromium://alert.html'>chromium</a>" sandbox></iframe>  <br/>
   <iframe src="data:text/html,<a href='chromium-x-callback://x-callback-url/open?url=alert.html'>chromium callback</a>" sandbox></iframe>  <br/>
