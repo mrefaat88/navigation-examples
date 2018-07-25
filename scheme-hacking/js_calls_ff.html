@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>popitup</title>
+</head>
+
+<body>
+    <script> 
+        function start() {
+            setTimeout(function () {
+                location.href = 'firefox://open-url?url=https://twitter.com';
+            }, 2000);
+            setTimeout(function () {
+                location.href = 'firefox://open-url?url=https://facebook.com';
+            }, 3000);
+            setTimeout(function () {
+                location.href = 'firefox://open-url?url=https://youtube.com';
+            }, 4000);
+            setTimeout(function () {
+                location.href = 'firefox://open-url?url=https://google.com';
+            }, 5000);
+        }
+        window.onload = start;
+    </script>
+</body>
+
+</html>
