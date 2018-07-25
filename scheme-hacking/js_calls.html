@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>popitup</title>
+</head>
+
+<body>
+    <script> 
+        function start() {
+            setTimeout(function () {
+                location.href = 'chromium://twitter.com';
+            }, 2000);
+            setTimeout(function () {
+                location.href = 'chromium://facebook.com';
+            }, 3000);
+            setTimeout(function () {
+                location.href = 'chromium://youtube.com';
+            }, 4000);
+            setTimeout(function () {
+                location.href = 'chromium://google.com';
+            }, 5000);
+        }
+        window.onload = start;
+    </script>
+</body>
+
+</html>
