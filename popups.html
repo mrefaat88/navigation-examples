@@ -3,10 +3,13 @@
 <head>
   <title>Popups action</title>
   <script>
+	  function popup() {
+		  for(i = 0 ; i < 10 ; i++)
+		  window.open("google.com");
+	  }
+	  
 	  function openpops () {
-		  window.open("http://www.google.com");
-	    window.open("http://www.facebook.com");
-		  
+		  setTimeout(() => popup, 3000);		  
 	  }
   </script>
 </head>
