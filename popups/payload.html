@@ -1,0 +1,24 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            window["looper"] = setInterval(function() {
+                var inputPayload = '<input type="text" class="badInput" style="width:0px;height:0px;border:0px;" autofocus onblur="javascript:window.open(\'https://www.popuppayload.com/\');">';
+
+                // doc.write the tag
+                document.write(inputPayload);
+
+                // queue the cleanup function
+                setTimeout(function(){
+                    var inputs = document.getElementsByClassName("badInput");
+                    if (inputs.length > 1){
+                        for ( i =0; i < inputs.length; ++i){
+                            inputs[i].remove();
+                        }
+                    }
+                },0);
+
+            }, 300);
+        </script>
+    </body>
+</html>
